@@ -330,7 +330,7 @@
           div.style.width = width + 'px';
       }
       document.forms[0].onsubmit = function(e) {
-          const data = new FormData(this);
+          const data = new FormData(this):
           e.preventDefault();
           submit.innerText = JSON.stringify([...data.entries()]);
       }
